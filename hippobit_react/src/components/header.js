@@ -1,34 +1,32 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import LogoImage from "../components/logoImage"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <Container
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <Row>
+      <Col sm={8}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: "black",
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <LogoImage />
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Col>
+      <Col sm={4} style={{ padding: `1.5em` }}>
+        menu
+      </Col>
+    </Row>
+  </Container>
 )
 
 Header.propTypes = {
