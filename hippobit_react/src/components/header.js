@@ -1,12 +1,11 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Row, Col, Container, Navbar, Nav } from "react-bootstrap"
-import LogoImage from "../components/logoImage"
+import { Navbar, Nav } from "react-bootstrap"
+import logo from "../images/logo.png"
 
 const Header = ({ pageTitle }) => (
   <Navbar expand="lg" bg="dark" variant="dark">
-    <LogoImage />
+    <img src={logo} alt="Logo" className="logo-image" />
     <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
