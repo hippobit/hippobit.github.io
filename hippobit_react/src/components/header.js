@@ -5,7 +5,11 @@ import logo from "../images/logo.png"
 
 const Header = ({ pageTitle }) => (
   <Navbar expand="lg" bg="dark" variant="dark">
-    <img src={logo} alt="Logo" className="logo-image" />
+    <img
+      src={logo}
+      alt="Logo"
+      className="d-inline-block align-middle logo-image"
+    />
     <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
