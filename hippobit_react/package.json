@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hippo-bit-gatsby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Web site for Hippo Bit (hippobit.dev)",
+  "version": "1.0",
+  "author": "Hippo Bit <support@hippobit.dev>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.7",
@@ -26,14 +26,20 @@
     "react-typography": "^0.16.19",
     "typescript": "^3.7.5",
     "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19",
     "typography-theme-funston": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "hippobit",
+    "hippo bit",
+    "reload logbook",
+    "bullets",
+    "ammo",
+    "ammunition",
+    "android",
+    "android app"
   ],
   "license": "MIT",
   "scripts": {
@@ -47,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/hippobit/hippobit.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/hippobit/hippobit.github.io"
   }
 }
