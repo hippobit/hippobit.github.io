@@ -1,17 +1,17 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import logo from "../images/logo.png";
+import PropTypes from "prop-types"
+import React from "react"
+import { Nav, Navbar } from "react-bootstrap"
+import logo from "../images/logo.png"
 
 class NavData {
   constructor(linkName, link) {
-    this.linkName = linkName;
-    this.link = link;
+    this.linkName = linkName
+    this.link = link
   }
 }
 
 const Header = ({ pageTitle, navItems }) => (
-  < Navbar expand="lg" bg="dark" variant="dark" >
+  <Navbar expand="lg" bg="dark" variant="dark">
     <img
       src={logo}
       alt="Logo"
@@ -19,29 +19,31 @@ const Header = ({ pageTitle, navItems }) => (
     />
     <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
     {renderNav(navItems)}
-  </Navbar >
+  </Navbar>
 )
-
 
 function renderNav(navItems) {
   if (!Array.isArray(navItems) || !navItems.length) {
-    return ("");
+    return ""
   }
   return (
     <>
       {console.log(navItems)}
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="justify-content-end"
+      >
         <Nav justify>
-          {
-            navItems.map(
-              (navData) => (
-                <Nav.Link href={navData.link} key={navData.link}>{navData.linkName}</Nav.Link>)
-            )
-          }
+          {navItems.map(navData => (
+            <Nav.Link href={navData.link} key={navData.link}>
+              {navData.linkName}
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
-    </>)
+    </>
+  )
 }
 
 Header.propTypes = {
@@ -54,5 +56,4 @@ Header.defaultProps = {
   navItems: [],
 }
 
-export { Header, NavData };
-
+export { Header, NavData }
