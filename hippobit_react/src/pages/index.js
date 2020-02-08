@@ -29,7 +29,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Container fluid>
         <Row id="splash" className="d-flex  justify-content-md-center">
-          <Col lg="5" md="12" style={{ "marginTop": `auto`, "marginBottom": `auto` }}>
+          <Col lg="6" md="12" style={{ "marginTop": `auto`, "marginBottom": `auto` }}>
             <h2>Tech that works for you</h2>
             <p className="text-muted">
               We are a startup company offering unique solutions for mobile
