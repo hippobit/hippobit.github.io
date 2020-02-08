@@ -2,7 +2,7 @@
   "name": "hippo-bit-gatsby",
   "private": true,
   "description": "Web site for Hippo Bit (hippobit.dev)",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Hippo Bit <support@hippobit.dev>",
   "dependencies": {
     "bootstrap": "^4.4.1",
