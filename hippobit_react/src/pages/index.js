@@ -29,14 +29,14 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Container fluid>
         <Row>
-          <Col style={{ margin: `auto` }}>
+          <Col lg="6" md="12" style={{ margin: `auto` }}>
             <h2>Tech that works for you</h2>
             <p className="text-muted">
               We are a startup company offering unique solutions for mobile
               apps (Android), customized electronics, and more.
             </p>
           </Col>
-          <Col>
+          <Col lg="6" md="12">
             <img src={imgSplash} alt="Welcome" />
           </Col>
         </Row>
