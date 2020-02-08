@@ -1,0 +1,16 @@
+.icon {
+    opacity: 0.4;
+    margin-bottom: auto;
+    margin-top: auto
+}
+  
+.icon:hover {
+  opacity: 0.9;
+  margin-bottom: auto;
+  margin-top: auto
+}
+
+.container {
+  padding: 0.5em;
+  font-size: 0.8em;
+}
