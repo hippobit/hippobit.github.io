@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.fz172.reloadlogbook",
-    "sha256_cert_fingerprints":
-    ["AF:D2:5D:B6:4E:9B:4F:3C:9A:E9:D7:6F:4F:1A:8D:B4:4A:26:D1:5D:0D:61:F4:6C:70:A5:C4:F1:1A:1F:18:47"]
-  }
-}]
