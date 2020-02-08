@@ -4,6 +4,7 @@ import { NavData } from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import imgSplash from "../images/splash.jpg"
 
 const navItems = [
   new NavData("About", "/#about"),
@@ -28,7 +29,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Container fluid>
         <Row>
-          <Col>
+          <Col style={{ margin: `auto` }}>
             <h2>Tech that works for you</h2>
             <p className="text-muted">
               We are a startup company offering unique solutions for mobile
@@ -36,6 +37,7 @@ const IndexPage = () => {
             </p>
           </Col>
           <Col>
+            <img src={imgSplash} alt="Welcome" />
           </Col>
         </Row>
       </Container>
