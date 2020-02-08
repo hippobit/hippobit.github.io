@@ -1,34 +1,58 @@
-import PropTypes from "prop-types"
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import logo from "../images/logo.png"
+import PropTypes from "prop-types";
+import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import logo from "../images/logo.png";
 
-const Header = ({ pageTitle }) => (
-  <Navbar expand="lg" bg="dark" variant="dark">
+class NavData {
+  constructor(linkName, link) {
+    this.linkName = linkName;
+    this.link = link;
+  }
+}
+
+const Header = ({ pageTitle, navItems }) => (
+  < Navbar expand="lg" bg="dark" variant="dark" >
     <img
       src={logo}
       alt="Logo"
       className="d-inline-block align-middle logo-image"
     />
     <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-      <Nav justify>
-        <Nav.Link href="/#about">About</Nav.Link>
-        <Nav.Link href="/#solution">Solution</Nav.Link>
-        <Nav.Link href="/#apps">Apps</Nav.Link>
-        <Nav.Link href="https://www.facebook.com/hippobit">Facebook</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+    {renderNav(navItems)}
+  </Navbar >
 )
+
+
+function renderNav(navItems) {
+  if (!Array.isArray(navItems) || !navItems.length) {
+    return ("");
+  }
+  return (
+    <>
+      {console.log(navItems)}
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+        <Nav justify>
+          {
+            navItems.map(
+              (navData) => (
+                <Nav.Link href={navData.link} key={navData.link}>{navData.linkName}</Nav.Link>)
+            )
+          }
+        </Nav>
+      </Navbar.Collapse>
+    </>)
+}
 
 Header.propTypes = {
   pageTitle: PropTypes.string,
+  navItems: PropTypes.array,
 }
 
 Header.defaultProps = {
   pageTitle: ``,
+  navItems: [],
 }
 
-export default Header
+export { Header, NavData };
+
