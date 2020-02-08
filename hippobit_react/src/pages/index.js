@@ -3,6 +3,7 @@ import React from "react"
 import { NavData } from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Container, Row, Col } from "react-bootstrap"
 
 const navItems = [
   new NavData("About", "/#about"),
@@ -25,9 +26,19 @@ const IndexPage = () => {
   return (
     <Layout pageTitle={data.site.siteMetadata.title} navItems={navItems}>
       <SEO title="Home" />
-      <h1>Tech that works for you</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <Container fluid>
+        <Row>
+          <Col>
+            <h2>Tech that works for you</h2>
+            <p className="text-muted">
+              We are a startup company offering unique solutions for mobile
+              apps (Android), customized electronics, and more.
+            </p>
+          </Col>
+          <Col>
+          </Col>
+        </Row>
+      </Container>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
       <Link to="/reloadlogbook">Go to page 2</Link>
     </Layout>
