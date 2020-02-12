@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"/OlT":function(o,n,e){},UNbL:function(o,n,e){o.exports={icon:"footer-module--icon--vplGd",container:"footer-module--container--2WpL3"}}}]);
+//# sourceMappingURL=styles-2f2b877a97964b7b4200.js.map
