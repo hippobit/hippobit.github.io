@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{Ga68:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a);t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement("meta",{"http-equiv":"refresh",content:"0; URL='https://www.amazon.com/s?me=A27KHSDVOKPA84&marketplaceID=ATVPDKIKX0DER'"}))}}}]);
+//# sourceMappingURL=component---src-pages-store-js-616b1928f7ce3a5ea801.js.map
