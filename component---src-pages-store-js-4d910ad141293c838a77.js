@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{Ga68:function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),o=n.n(a);e.default=function(){return o.a.createElement(o.a.Fragment,null,o.a.createElement("meta",{"http-equiv":"refresh",content:"0; URL='https://www.amazon.com/hippobit'"}))}}}]);
+//# sourceMappingURL=component---src-pages-store-js-4d910ad141293c838a77.js.map
